@@ -32,7 +32,7 @@ DevSecOps pipeline for React+Docker based project using Azure DevOps - Release P
 ### Mobile Security Pipeline (TBC)
 
 ### Attack Tree SlackBot
-A simple bot that sits on AWS EC2 instance with Python Flask API, will create attack-tree-diagram using graphviz library with numbered list of attack as input.
+A simple bot that sits on AWS EC2 instance with Python Flask API, will create attack-tree-diagram using graphviz library when numbered list of attack is provided as input.
 
 ![slackbot](https://user-images.githubusercontent.com/11514346/73794522-8df1e080-47a0-11ea-8a62-6b646f72e334.PNG)
 
