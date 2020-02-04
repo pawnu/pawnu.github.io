@@ -1,37 +1,55 @@
-## Welcome to GitHub Pages
+## Some DevSecOps projects i'm working on
 
-You can use the [editor on GitHub](https://github.com/pawnu/pawnu.github.io/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
-
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
-
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
+```
+1. Python Jenkins Declarative pipeline
+2. JAVA AWS cloud-native Pipeline
+3. JavaScript Azure DevOps Pipeline
+4. ?? GCP Kubernetes Pipeline (TBC)
+5. Mobile Security Pipeline (TBC)
+5. Attack Tree SlackBot
+6. Security Education For Teams (TBC)
 ```
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
 
-### Jekyll Themes
+### Python Jenkins Declarative pipeline
+DevSecOps pipeline for Python based project using Jenkins, Ansible, AWS, and open-source security tools and checks.
+<details>
+  <summary>Click to view Pipeline</summary>
+  
+  ![pipeline](https://user-images.githubusercontent.com/11514346/71473164-e57a5500-27cd-11ea-97cb-3c25f0266407.JPG)
+  
+</details>
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/pawnu/pawnu.github.io/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+### JAVA AWS cloud-native Pipeline
+DevSecOps pipeline for JAVA based project using AWS DevOps tools, AWS security tools, and some open source tools.
+<details>
+  <summary>Click to view Pipeline</summary>
+  
+  ![AWS_Code_Pipeline](https://user-images.githubusercontent.com/11514346/73794262-f68c8d80-479f-11ea-93a4-c2a53bd2932c.png)
 
-### Support or Contact
+</details>
 
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+### JavaScript Azure DevOps Pipeline
+DevSecOps pipeline for React+Docker based project using Azure DevOps - Release Pipeline, Azure security solutions, and some open source tools.
+<details>
+  <summary>Click to view Pipeline</summary>
+  
+  ![azure_devops2](https://user-images.githubusercontent.com/11514346/73614730-9fe54f00-45f9-11ea-9428-9872ed98baf1.png)
+
+</details>
+
+### ?? GCP Kubernetes Pipeline (TBC)
+
+### Mobile Security Pipeline (TBC)
+
+### Attack Tree SlackBot
+A simple bot that sits on AWS EC2 instance with Python Flask API, will create attack-tree-diagram using graphviz library with numbered list of attack as input.
+<details>
+  <summary>Click to view bot at work</summary>
+  
+  ![slackbot](https://user-images.githubusercontent.com/11514346/73794522-8df1e080-47a0-11ea-8a62-6b646f72e334.PNG)
+
+</details>
+
+### Security Education For Teams (TBC)
+
