@@ -67,7 +67,7 @@ DevSecOps pipeline for JAVA based project using AWS DevOps tools, AWS security t
 DevSecOps pipeline for React+Docker based project using Azure DevOps - Release Pipeline, Azure security solutions, and some open source tools.
 
 **Toolchain**
-- CICD - `Azure DevOps`, 'Azure Release Pipeline`
+- CICD - `Azure DevOps`, `Azure Release Pipeline`
 - Secret Check - `trufflehog`
 - SCM - `Github`
 - SCA - `anchore` non-os scans
