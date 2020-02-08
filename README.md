@@ -13,7 +13,7 @@
 ```
 - Python Jenkins Declarative pipeline
 - JAVA AWS cloud-native Pipeline
-- JavaScript Azure DevOps Pipeline
+- JavaScript Azure-DevOps Pipeline
 - Attack Tree SlackBot
 ```
 
