@@ -1,21 +1,12 @@
-## DevSecOps projects in scope
+# DevSecOps Projects
 
-**Work-in-progress**
-
-```
-* Kubernetes GCP Terraform Pipeline (TBC) - TBD which language
-* Mobile Security Pipeline (TBC) - TBD Android or Swift
-* Security Education For Teams (TBC) - in progress
-```
-
-**Completed-so-far**
-
-```
-- Python Jenkins Declarative pipeline
-- JAVA AWS cloud-native Pipeline
-- JavaScript Azure-DevOps Pipeline
-- Attack Tree SlackBot
-```
+- [x] **Python Jenkins Declarative pipeline**
+- [x] **JAVA AWS CodePipeline**
+- [x] **JavaScript Azure-DevOps Pipeline** 
+- [x] **Attack Tree SlackBot**
+- [ ] K8s GCP Terraform Pipeline *(TBC)*
+- [ ] Mobile App Security Pipeline *(TBC, TBD Android or Swift)*
+- [ ] Security Education For Teams *(In progress)*
 
 ## End Result & Demo
 
