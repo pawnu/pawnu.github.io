@@ -7,7 +7,7 @@ They are based on my interests and some popular tools used in the industry. I ha
 - [x] Python Jenkins Declarative pipeline
 - [x] JAVA AWS cloud-native Pipeline
 - [x] JavaScript Azure-DevOps Pipeline
-- [ ] K8s GCP Terraform Pipeline *(TBC)*
+- [ ] GoCD GKE Terraform Pipeline *(In progress)*
 - [ ] Mobile App Security Pipeline *(TBC, TBD Android or Swift)*
 - [x] Attack Tree SlackBot
 - [ ] Security Education For Teams *(In progress)*
