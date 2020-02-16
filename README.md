@@ -1,25 +1,19 @@
 # DevSecOps Projects
 
-:vertical_traffic_light: Listed are some of my personal DevSecOps projects and their progresses  :vertical_traffic_light:
+Listed are some of my personal DevSecOps projects and their progresses.
 
-They are based on my interests and some popular tools out in the industry. I have tried to vary each pipeline tooling in order to understand and overcome the various challenges present in CI/CD development :facepunch:
+They are based on my interests and some popular tools used in the industry. I have tried to vary each pipeline tooling in order to learn and overcome the various challenges present in CI/CD development.
 
-:white_check_mark: Python Jenkins Declarative pipeline
-
-:white_check_mark: JAVA AWS cloud-native Pipeline
-
-:white_check_mark: JavaScript Azure-DevOps Pipeline
-
+- [x] Python Jenkins Declarative pipeline
+- [x] JAVA AWS cloud-native Pipeline
+- [x] JavaScript Azure-DevOps Pipeline
 - [ ] K8s GCP Terraform Pipeline *(TBC)*
-
 - [ ] Mobile App Security Pipeline *(TBC, TBD Android or Swift)*
-
-:white_check_mark: Attack Tree SlackBot
-
+- [x] Attack Tree SlackBot
 - [ ] Security Education For Teams *(In progress)*
 
 
-## Screenshots and details for projects completed :v:
+## More details and screenshots for projects completed
 
 ### Python Jenkins Declarative pipeline
 DevSecOps pipeline for Python based project using Jenkins, Ansible, AWS, and open-source security tools and checks.
@@ -105,6 +99,6 @@ A simple bot that sits on AWS EC2 instance with Python Flask API, will create at
 
 ---
 
-:construction: *More to follow*
+*More to follow*
 
 
