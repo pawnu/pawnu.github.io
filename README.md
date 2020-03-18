@@ -2,12 +2,12 @@
 
 Listed are some of my personal DevSecOps projects and their progresses.
 
-They are based on my interests and some popular tools used in the industry. I have tried to vary each pipeline tooling in order to learn and overcome the various challenges present in CI/CD development.
+They are based on my interests and some popular tools used in the industry. I tried to vary each pipeline tooling in order to learn and overcome whatever challenges would present itself in CI/CD pipeline.
 
 - [x] Python Jenkins Declarative pipeline
 - [x] JAVA AWS cloud-native Pipeline
 - [x] JavaScript Azure-DevOps Pipeline
-- [ ] Terraform GCP GoCD Pipeline *(In progress)*
+- [x] REST API GCP GoCD Pipeline
 - [ ] Mobile App Security Pipeline *(TBC, TBD Android and/or Swift)*
 - [x] Attack Tree SlackBot
 - [ ] Security Education For Teams *(In progress)*
@@ -79,6 +79,27 @@ DevSecOps pipeline for React+Docker based project using Azure DevOps - Release P
 - Environment - `Azure Cloud`
 
 ![azure_devops2](https://user-images.githubusercontent.com/11514346/73614730-9fe54f00-45f9-11ea-9428-9872ed98baf1.png)
+
+---
+
+### REST-API GCP GoCD Pipeline
+
+DevSecOps pipeline for Python flask REST API project using Go CD, Terraform, GCP, and open-source and cloud native security tools and checks.
+
+**Toolchain**
+- CICD - `Go CD`
+- Secret Check - `trufflehog`
+- SCM - `Github`
+- SCA - `safety`
+- SAST - `bandit`
+- DAST - `GCP Web Security Scanner`
+- Container security - `lynis`
+- Compliance - `terraform-compliance`
+- Environment - `Google Cloud Platform`
+
+![GoCDPipelineView](https://user-images.githubusercontent.com/11514346/77017479-88c4ab80-6972-11ea-87c1-cd89039f0493.PNG)
+
+![GoCDValueStreamMap](https://user-images.githubusercontent.com/11514346/77017476-86fae800-6972-11ea-834e-88b551d98003.PNG)
 
 ---
 
