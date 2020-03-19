@@ -84,7 +84,7 @@ DevSecOps pipeline for React+Docker based project using Azure DevOps - Release P
 
 ### REST-API GCP GoCD Pipeline
 
-DevSecOps pipeline for Python flask REST API project using Go CD, Terraform, GCP, and open-source and cloud native security tools and checks.
+DevSecOps pipeline for Python flask REST API project using Go CD, Terraform, GCP, and open-source and cloud native security tools and checks. Secret check, SCA, SAST, Container security, compliance checks have all been shifted left and are tested all within code level i.e. source code and Infrastructure as Code (IaC).
 
 **Toolchain**
 - CICD - `Go CD`
