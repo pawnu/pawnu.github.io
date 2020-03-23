@@ -2,13 +2,13 @@
 
 Listed are some of my personal DevSecOps projects and their progresses.
 
-They are based on my interests and some popular tools used in the industry. I tried to vary each pipeline tooling in order to learn and overcome whatever challenges would present itself in CI/CD pipeline.
+They are based on my interests and some popular tools used in the industry. I tried to vary each pipeline tooling in order to learn and overcome whatever challenge would present itself in CI/CD pipeline.
 
 - [x] Python Jenkins Declarative pipeline
 - [x] JAVA AWS cloud-native Pipeline
 - [x] JavaScript Azure-DevOps Pipeline
-- [x] REST API GCP GoCD Pipeline
-- [ ] Mobile App Security Pipeline *(TBC, TBD Android and/or Swift)*
+- [x] Python-flask API GCP GoCD Pipeline
+- [ ] Mobile App Security Pipeline *(In progress - Android and Swift)*
 - [x] Attack Tree SlackBot
 - [ ] Security Education For Teams *(In progress)*
 
@@ -84,7 +84,7 @@ DevSecOps pipeline for React+Docker based project using Azure DevOps - Release P
 
 ### REST-API GCP GoCD Pipeline
 
-DevSecOps pipeline for Python flask REST API project using Go CD, Terraform, GCP, and open-source and cloud native security tools and checks. Secret check, SCA, SAST, Container security, compliance checks have all been shifted left and are tested all within code level i.e. source code and Infrastructure as Code (IaC).
+DevSecOps pipeline for Python flask REST API project using Go CD, Terraform, GCP, and open-source and cloud native security tools and checks. 
 
 **Toolchain**
 - CICD - `Go CD`
@@ -96,6 +96,8 @@ DevSecOps pipeline for Python flask REST API project using Go CD, Terraform, GCP
 - Container security - `lynis`
 - Compliance - `terraform-compliance`
 - Environment - `Google Cloud Platform`
+
+Secret check, SCA, SAST, Container security, compliance checks have all been shifted left and are tested all within code level i.e. source code and Infrastructure as Code (IaC).
 
 ![GoCDPipelineView](https://user-images.githubusercontent.com/11514346/77017479-88c4ab80-6972-11ea-87c1-cd89039f0493.PNG)
 
