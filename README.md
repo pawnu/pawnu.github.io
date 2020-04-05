@@ -9,8 +9,9 @@ They are based on my interests and some popular tools used in the industry. I tr
 - [x] JavaScript Azure-DevOps Pipeline
 - [x] Python-flask API GCP GoCD Pipeline
 - [x] Mobile App Security Pipeline
+- [ ] Kubernetes security Pipeline *(In progress)*
 - [x] Attack Tree SlackBot
-- [ ] Security Education For Teams *(In progress)*
+- [ ] Security Education For Teams *(on hold)*
 
 
 ## More details and screenshots for projects completed
@@ -110,14 +111,14 @@ A DevSecOps pipeline for Android and iOS based project using Jenkins, android op
 
 **Toolchain**
 
-1. secret-check - `trufflehog`
-2. SAST - `findsecbugs`
-3. Vulnerability Analysis - `androbugs`
-4. Malware Analysis - `quark-engine`
-5. Malicious Behaviour Analysis - `androwarn`
-6. Application Vulnerability Analysis - `qark`
-7. APK composition analysis - `APKiD`
-8. Security Test - `MobSF` for iOS and Android
+- secret-check - `trufflehog`
+- SAST - `findsecbugs`
+- Vulnerability Analysis - `androbugs`
+- Malware Analysis - `quark-engine`
+- Malicious Behaviour Analysis - `androwarn`
+- Application Vulnerability Analysis - `qark`
+- APK composition analysis - `APKiD`
+- Security Test - `MobSF` for iOS and Android
 
 For Android, MobSF also checks certificate strength, obfuscation techniques, anti reverse engineering, dangerous permission etc.
 
