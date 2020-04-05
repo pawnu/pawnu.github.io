@@ -8,7 +8,7 @@ They are based on my interests and some popular tools used in the industry. I tr
 - [x] JAVA AWS cloud-native Pipeline
 - [x] JavaScript Azure-DevOps Pipeline
 - [x] Python-flask API GCP GoCD Pipeline
-- [ ] Mobile App Security Pipeline *(In progress - Android and Swift)*
+- [x] Mobile App Security Pipeline
 - [x] Attack Tree SlackBot
 - [ ] Security Education For Teams *(In progress)*
 
@@ -102,6 +102,29 @@ Secret check, SCA, SAST, Container security, compliance checks have all been shi
 ![GoCDPipelineView](https://user-images.githubusercontent.com/11514346/77017479-88c4ab80-6972-11ea-87c1-cd89039f0493.PNG)
 
 ![GoCDValueStreamMap](https://user-images.githubusercontent.com/11514346/77017476-86fae800-6972-11ea-834e-88b551d98003.PNG)
+
+---
+
+### Mobile App Security Pipeline
+A DevSecOps pipeline for Android and iOS based project using Jenkins, android open-source security tools, and a security testing framework MobSF which does code/binary analysis, malware analysis, general and sensitive information check on iOS+Android apps. 
+
+**Toolchain**
+
+1. secret-check - `trufflehog`
+2. SAST - `findsecbugs`
+3. Vulnerability Analysis - `androbugs`
+4. Malware Analysis - `quark-engine`
+5. Malicious Behaviour Analysis - `androwarn`
+6. Application Vulnerability Analysis - `qark`
+7. APK composition analysis - `APKiD`
+8. Security Test - `MobSF` for iOS and Android
+
+For Android, MobSF also checks certificate strength, obfuscation techniques, anti reverse engineering, dangerous permission etc.
+
+![pipeline](https://user-images.githubusercontent.com/11514346/78502893-592be680-775b-11ea-8d4a-f6b4653bbeef.PNG)
+
+
+![iOSPipeline](https://user-images.githubusercontent.com/11514346/78502793-bd9a7600-775a-11ea-8f22-a5dc49cc3077.PNG)
 
 ---
 
