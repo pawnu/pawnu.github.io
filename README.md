@@ -8,7 +8,7 @@ They are based on my interests and some popular tools used in the industry. I tr
 - [x] JAVA AWS cloud-native Pipeline
 - [x] JavaScript Azure-DevOps Pipeline
 - [x] RESTApi GCP GoCD Pipeline
-- [x] Mobile App Security Pipeline
+- [x] Android/iOS App Security Pipeline
 - [ ] Kubernetes security Pipeline *(In progress)*
 - [x] Attack Tree SlackBot
 - [ ] Security Education For Teams *(on hold)*
@@ -106,7 +106,7 @@ Secret check, SCA, SAST, Container security, compliance checks have all been shi
 
 ---
 
-### Mobile App Security Pipeline
+### Android/iOS App Security Pipeline
 A DevSecOps pipeline for Android and iOS based project using Jenkins, android open-source security tools, and a security testing framework MobSF which does code/binary analysis, malware analysis, general and sensitive information check on iOS+Android apps. 
 
 **Toolchain**
