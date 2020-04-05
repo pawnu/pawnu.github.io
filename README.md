@@ -7,7 +7,7 @@ They are based on my interests and some popular tools used in the industry. I tr
 - [x] Python Jenkins Declarative pipeline
 - [x] JAVA AWS cloud-native Pipeline
 - [x] JavaScript Azure-DevOps Pipeline
-- [x] Python-flask API GCP GoCD Pipeline
+- [x] RESTApi GCP GoCD Pipeline
 - [x] Mobile App Security Pipeline
 - [ ] Kubernetes security Pipeline *(In progress)*
 - [x] Attack Tree SlackBot
