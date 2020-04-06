@@ -96,7 +96,7 @@ DevSecOps pipeline for Python flask REST API project using Go CD, Terraform, GCP
 - DAST - `GCP Web Security Scanner`
 - Container security - `lynis`
 - Compliance - `terraform-compliance`
-- Environment - `Google Cloud Platform`
+- Environment - `GCP`
 
 Secret check, SCA, SAST, Container security, compliance checks have all been shifted left and are tested all within code level i.e. source code and Infrastructure as Code (IaC).
 
@@ -110,7 +110,7 @@ Secret check, SCA, SAST, Container security, compliance checks have all been shi
 A DevSecOps pipeline for Android and iOS based project using Jenkins, android open-source security tools, and a security testing framework MobSF which does code/binary analysis, malware analysis, general and sensitive information check on iOS+Android apps. 
 
 **Toolchain**
-
+- CICD - `Jenkins`
 - secret-check - `trufflehog`
 - SAST - `findsecbugs`
 - Vulnerability Analysis - `androbugs`
@@ -119,6 +119,7 @@ A DevSecOps pipeline for Android and iOS based project using Jenkins, android op
 - Application Vulnerability Analysis - `qark`
 - APK composition analysis - `APKiD`
 - Security Test - `MobSF` for iOS and Android
+- Environment - `GCP`
 
 For Android, MobSF also checks certificate strength, obfuscation techniques, anti reverse engineering, dangerous permission etc.
 
@@ -147,5 +148,3 @@ A simple bot that sits on AWS EC2 instance with Python Flask API, will create at
 ---
 
 *More to follow*
-
-
