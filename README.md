@@ -135,10 +135,13 @@ DevSecOps pipeline for container based application deployed to GCP kubernetes cl
 
 - CICD - `Jenkins`
 - Git Secret Check - `trufflehog`
-- Image vulnerability analysis - `trivy`
-- Image malware analysis - `clamav`
-- Image storage - `Google Container Registry`
-- Kubernetes platform - `Google Kubernetes Engine`
+- Container image vulnerability analysis - `trivy`
+- Container Image malware analysis - `clamav`
+- Container Image storage - `Google Container Registry`
+- Kubernetes Engine - `Google Kubernetes Engine`
+- Kubernetes nodes - `Google Container-Optimized OS`
+- Kubernetes orchestration - `gcloud`
+- Kubernetes management - `kubectl`, `helm`
 - Kubernetes CIS benchmark - `kube-bench`
 - Kubernetes penetration test - `kube-hunter`
 - Kubernetes runtime protection - `falco`
