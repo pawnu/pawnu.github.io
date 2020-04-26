@@ -9,9 +9,9 @@ They are based on my interests and some popular tools used in the industry. I tr
 - [x] JavaScript Azure-DevOps Pipeline
 - [x] RESTApi GCP GoCD Pipeline
 - [x] Android/iOS App Security Pipeline
-- [ ] Kubernetes security Pipeline *(In progress)*
+- [x] Container/kubernetes security Pipeline
 - [x] Attack Tree SlackBot
-- [ ] Security Education For Teams *(on hold)*
+- [ ] Security Education For Teams *(In Progress)*
 
 
 ## More details and screenshots for projects completed
@@ -129,6 +129,22 @@ For Android, MobSF also checks certificate strength, obfuscation techniques, ant
 ![iOSPipeline](https://user-images.githubusercontent.com/11514346/78502793-bd9a7600-775a-11ea-8f22-a5dc49cc3077.PNG)
 
 ---
+
+### Container/kubernetes security Pipeline
+DevSecOps pipeline for container based application deployed to GCP kubernetes cluster using GCP k8s and container solutions, and security tests with open source container solutions.
+
+- CICD - `Jenkins`
+- Git Secret Check - `trufflehog`
+- Image vulnerability analysis - `trivy`
+- Image malware analysis - `clamav`
+- Image storage - `Google Container Registry`
+- Kubernetes platform - `Google Kubernetes Engine`
+- Kubernetes CIS benchmark - `kube-bench`
+- Kubernetes penetration test - `kube-hunter`
+- Kubernetes runtime protection - `falco`
+- Environment - `GCP`
+
+![image](https://user-images.githubusercontent.com/11514346/80305685-35861a00-87b6-11ea-9a38-9930e7e8af6b.png)
 
 ### Attack Tree SlackBot
 A simple bot that sits on AWS EC2 instance with Python Flask API, will create attack-tree-diagram using graphviz library when numbered list of attack is provided as input.
