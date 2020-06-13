@@ -11,8 +11,8 @@ They are based on my interests and some popular tools used in the industry. I tr
 - [x] Android/iOS App Security Pipeline
 - [x] Container/kubernetes security Pipeline
 - [x] Attack Tree SlackBot
-- [ ] Security Education For Teams *(In Progress)*
-
+- [ ] Vuln Management Security Pipeline
+- [ ] K8s Native Security Pipeline
 
 ## More details and screenshots for projects completed
 
