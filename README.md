@@ -11,7 +11,7 @@ They are based on my interests and some popular tools used in the industry. I tr
 - [x] Android/iOS App Security Pipeline
 - [x] Container/kubernetes security Pipeline
 - [x] Attack Tree SlackBot
-- [ ] Vulnerability Management driven Security Pipeline
+- [x] Vulnerability Management driven Security Pipeline
 - [ ] Tekton K8s native Security Pipeline
 
 ## More details and screenshots for projects completed
@@ -165,5 +165,23 @@ A simple bot that sits on AWS EC2 instance with Python Flask API, will create at
 ![slackbot](https://user-images.githubusercontent.com/11514346/73794522-8df1e080-47a0-11ea-8a62-6b646f72e334.PNG)
 
 ---
+### Vulnerability Management driven Security Pipeline
+A vulnerability manager (DefectDojo) based pipeline for Python based project which comes with ASVS Standard to provide security test plan and requirements, integration of vulnerability data from 70+ tools, and slack integration for monitoring. 
 
+**Toolchain**
+
+1. Planning - `OWASP ASVS`
+2. CI/CD - `Go CD` 
+3. secret-check - `trufflehog`
+4. SCA - `safety`
+5. SAST - `bandit`
+6. DAST - `nikto`
+7. Container Vulnerability Analysis - `trivy`
+8. Vulnerability Manager - `DefectDojo`
+9. Monitoring - `Slack`
+10. Environment - `AWS`
+
+![gocd_pipeline](https://user-images.githubusercontent.com/11514346/84599383-8be41080-ae69-11ea-952c-51f2ad97f4eb.PNG)
+
+---
 *More to follow*
