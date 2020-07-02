@@ -1,8 +1,8 @@
-# DevSecOps Projects
+# DevSecOps Pipelines
 
-Listed are some of my personal DevSecOps projects and their progresses.
+Listed are some of my personal DevSecOps pipeline projects and their progresses.
 
-They are based on my interests and some popular tools used in the industry. I tried to vary each pipeline tooling in order to learn and overcome whatever challenge would present itself in CI/CD pipeline.
+They are based on my interests and some popular tools used in the industry. I tried to vary each pipeline tooling in order to learn and overcome whatever challenge would present itself during the process.
 
 - [x] Python Jenkins Declarative pipeline
 - [x] JAVA AWS cloud-native Pipeline
@@ -11,10 +11,10 @@ They are based on my interests and some popular tools used in the industry. I tr
 - [x] Android/iOS App Security Pipeline
 - [x] Container/kubernetes security Pipeline
 - [x] Attack Tree SlackBot
-- [x] Vulnerability Management driven Security Pipeline
+- [x] Vulerability Management driven Pipeline
 - [ ] Tekton K8s native Security Pipeline
 
-## More details and screenshots for projects completed
+## More details and screenshots for pipelines completed
 
 ### Python Jenkins Declarative pipeline
 DevSecOps pipeline for Python based project using Jenkins, Ansible, AWS, and open-source security tools and checks.
