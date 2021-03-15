@@ -1,22 +1,18 @@
 # DevSecOps Pipelines
 
-Listed are some of my personal DevSecOps pipeline projects and their progresses.
+Following are some of pipelines I have created
 
-They are based on my interests and some popular tools used in the industry. I tried to vary each pipeline tooling in order to learn and overcome whatever challenge would present itself during the process.
+- Python Jenkins Declarative Pipeline
+- JAVA AWS Cloud-Native Pipeline
+- JavaScript Azure-DevOps Pipeline
+- RESTApi GCP GoCD Pipeline
+- Android/iOS App Security Pipeline
+- Container/Kubernetes Security Pipeline
+- Attack Tree SlackBot
+- Vulerability Management Driven Pipeline
+- Kubernetes-Native Tekton Security Pipeline
 
-- [x] Python Jenkins Declarative pipeline
-- [x] JAVA AWS cloud-native Pipeline
-- [x] JavaScript Azure-DevOps Pipeline
-- [x] RESTApi GCP GoCD Pipeline
-- [x] Android/iOS App Security Pipeline
-- [x] Container/kubernetes security Pipeline
-- [x] Attack Tree SlackBot
-- [x] Vulerability Management driven Pipeline
-- [ ] Tekton K8s native Security Pipeline
-
-## More details and screenshots for pipelines completed
-
-### Python Jenkins Declarative pipeline
+## Python Jenkins Declarative Pipeline
 DevSecOps pipeline for Python based project using Jenkins, Ansible, AWS, and open-source security tools and checks.
 
 **Toolchain**
@@ -35,10 +31,8 @@ DevSecOps pipeline for Python based project using Jenkins, Ansible, AWS, and ope
 ![pipeline](https://user-images.githubusercontent.com/11514346/71473164-e57a5500-27cd-11ea-97cb-3c25f0266407.JPG)
 
 ![psparch](https://user-images.githubusercontent.com/11514346/71579758-effe5c80-2af5-11ea-97ae-dd6c91b02312.PNG)
-  
----
 
-### JAVA AWS cloud-native Pipeline
+## JAVA AWS Cloud-Native Pipeline
 DevSecOps pipeline for JAVA based project using AWS DevOps tools, AWS security tools, and some open source tools.
 
 **Toolchain**
@@ -58,9 +52,8 @@ DevSecOps pipeline for JAVA based project using AWS DevOps tools, AWS security t
 
 ![AWS_Code_Pipeline](https://user-images.githubusercontent.com/11514346/73794262-f68c8d80-479f-11ea-93a4-c2a53bd2932c.png)
 
----
 
-### JavaScript Azure-DevOps Pipeline
+## JavaScript Azure-DevOps Pipeline
 DevSecOps pipeline for React+Docker based project using Azure DevOps - Release Pipeline, Azure security solutions, and some open source tools.
 
 **Toolchain**
@@ -81,9 +74,8 @@ DevSecOps pipeline for React+Docker based project using Azure DevOps - Release P
 
 ![azure_devops2](https://user-images.githubusercontent.com/11514346/73614730-9fe54f00-45f9-11ea-9428-9872ed98baf1.png)
 
----
 
-### REST-API GCP GoCD Pipeline
+## REST-API GCP GoCD Pipeline
 
 DevSecOps pipeline for Python flask REST API project using Go CD, Terraform, GCP, and open-source and cloud native security tools and checks. 
 
@@ -104,9 +96,8 @@ Secret check, SCA, SAST, Container security, compliance checks have all been shi
 
 ![GoCDValueStreamMap](https://user-images.githubusercontent.com/11514346/77017476-86fae800-6972-11ea-834e-88b551d98003.PNG)
 
----
 
-### Android/iOS App Security Pipeline
+## Android/iOS App Security Pipeline
 A DevSecOps pipeline for Android and iOS based project using Jenkins, android open-source security tools, and a security testing framework MobSF which does code/binary analysis, malware analysis, general and sensitive information check on iOS+Android apps. 
 
 **Toolchain**
@@ -128,9 +119,8 @@ For Android, MobSF also checks certificate strength, obfuscation techniques, ant
 
 ![iOSPipeline](https://user-images.githubusercontent.com/11514346/78502793-bd9a7600-775a-11ea-8f22-a5dc49cc3077.PNG)
 
----
 
-### Container/kubernetes security Pipeline
+## Container/Kubernetes Security Pipeline
 DevSecOps pipeline for container based application deployed to GCP kubernetes cluster using GCP k8s and container solutions, and security tests with open source container solutions.
 
 - CICD - `Jenkins`
@@ -140,8 +130,8 @@ DevSecOps pipeline for container based application deployed to GCP kubernetes cl
 - Container Image storage - `Google Container Registry`
 - Kubernetes Engine - `Google Kubernetes Engine`
 - Kubernetes nodes - `Google Container-Optimized OS`
-- Kubernetes orchestration - `gcloud`
-- Kubernetes management - `kubectl`, `helm`
+- Kubernetes setup - `gcloud`
+- Kubernetes resource deployment - `kubectl`, `helm`
 - Kubernetes CIS benchmark - `kube-bench`
 - Kubernetes penetration test - `kube-hunter`
 - Kubernetes runtime protection - `falco`
@@ -149,7 +139,8 @@ DevSecOps pipeline for container based application deployed to GCP kubernetes cl
 
 ![image](https://user-images.githubusercontent.com/11514346/80305685-35861a00-87b6-11ea-9a38-9930e7e8af6b.png)
 
-### Attack Tree SlackBot
+
+## Attack Tree SlackBot
 A simple bot that sits on AWS EC2 instance with Python Flask API, will create attack-tree-diagram using graphviz library when numbered list of attack is provided as input.
 
 **Toolchain**
@@ -164,24 +155,44 @@ A simple bot that sits on AWS EC2 instance with Python Flask API, will create at
 
 ![slackbot](https://user-images.githubusercontent.com/11514346/73794522-8df1e080-47a0-11ea-8a62-6b646f72e334.PNG)
 
----
-### Vulnerability Management driven Security Pipeline
+## Vulnerability Management Driven Security Pipeline
 A vulnerability manager (DefectDojo) based pipeline for Python based project which comes with ASVS Standard to provide security test plan and requirements, integration of vulnerability data from 70+ tools, and slack integration for monitoring. 
 
 **Toolchain**
 
-1. Planning - `OWASP ASVS`
-2. CI/CD - `Go CD` 
-3. secret-check - `trufflehog`
-4. SCA - `safety`
-5. SAST - `bandit`
-6. DAST - `nikto`
-7. Container Vulnerability Analysis - `trivy`
-8. Vulnerability Manager - `DefectDojo`
-9. Monitoring - `Slack`
-10. Environment - `AWS`
+- Planning - `OWASP ASVS`
+- CI/CD - `Go CD` 
+- secret-check - `trufflehog`
+- SCA - `safety`
+- SAST - `bandit`
+- DAST - `nikto`
+- Container Vulnerability Analysis - `trivy`
+- Vulnerability Manager - `DefectDojo`
+- Monitoring - `Slack`
+- Environment - `AWS`
 
 ![gocd_pipeline](https://user-images.githubusercontent.com/11514346/84599383-8be41080-ae69-11ea-952c-51f2ad97f4eb.PNG)
 
----
-*More to follow*
+## Kubernetes-Native Tekton Security Pipeline
+
+A DevSecOps pipeline living within Kubernetes Cluster as Tekton CI/CD, checking for Application Security, Container Security, Infrastructure as Code security, using opensource and free tools.
+
+- CICD - `Tekton`
+- Git Secret Check - `trufflehog`
+- SCA - `safety`
+- SAST - `bandit`
+- DAST - `OWASP Zed Attack Proxy`
+- IaC Scanner - `checkov`
+- Container Vulnerability Analysis - `starboard trivy`
+- Container Image storage - `Docker Hub`
+- Database - `PostgreSQL`
+- Dynamic Secrets - `Hashicorp Vault database engine`
+- Pod Secret Injection - `Hashicorp Vault annotation + agent`
+- Kubernetes resource deployment - `kubectl`, `helm`
+- Kubernetes CIS benchmark - `starboard kube-bench`
+- Kubernetes workload audit - `starboard polaris`
+- Kubernetes penetration test - `starboard kube-hunter`
+- Kubernetes Engine - `Minikube`
+- Kubernetes nodes - `virtualbox driver`
+
+![tektonpipeline](https://user-images.githubusercontent.com/11514346/111226740-7444de80-85d9-11eb-91b8-e6e308799919.PNG)
