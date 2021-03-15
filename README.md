@@ -1,6 +1,6 @@
 # DevSecOps Pipelines
 
-Following are some of pipelines I have created
+Following are some DevSecOps Pipelines I have created
 
 - Python Jenkins Declarative Pipeline
 - JAVA AWS Cloud-Native Pipeline
