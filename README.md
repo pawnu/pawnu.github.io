@@ -185,8 +185,7 @@ A DevSecOps pipeline living within Kubernetes Cluster as Tekton CI/CD, checking 
 - IaC Scanner - `checkov`
 - Container Vulnerability Analysis - `starboard trivy`
 - Container Image storage - `Docker Hub`
-- Database - `PostgreSQL`
-- Dynamic Secrets - `Hashicorp Vault database engine`
+- Database Dynamic Secrets - `Hashicorp Vault Database Engine`, `PostgreSQL`
 - Pod Secret Injection - `Hashicorp Vault annotation + agent`
 - Kubernetes resource deployment - `kubectl`, `helm`
 - Kubernetes CIS benchmark - `starboard kube-bench`
