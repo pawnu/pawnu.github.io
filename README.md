@@ -2,15 +2,15 @@
 
 Following are some pipelines I have created to better understand DevSecOps.
 
-- Python Jenkins Declarative Pipeline
-- JAVA AWS Cloud-Native Pipeline
-- JavaScript Azure-DevOps Pipeline
-- RESTApi GCP GoCD Pipeline
-- Android/iOS App Security Pipeline
-- Container/Kubernetes Security Pipeline
-- Attack Tree SlackBot
-- Vulerability Management Driven Pipeline
-- Kubernetes-Native Tekton Security Pipeline
+- [Python Jenkins Declarative Pipeline](#python-jenkins-declarative-pipeline)
+- [JAVA AWS Cloud-Native Pipeline](#java-aws-cloud-native-pipeline)
+- [JavaScript Azure-DevOps Pipeline](#javascript-azure-devops-pipeline)
+- [REST API GCP GoCD Pipeline](#rest-api-gcp-gocd-pipeline)
+- [Android/iOS App Security Pipeline](#androidios-app-security-pipeline)
+- [Container/Kubernetes Security Pipeline](#containerkubernetes-security-pipeline)
+- [Attack Tree SlackBot](#attack-tree-slackbot)
+- [Vulnerability Management Driven Pipeline](#vulnerability-management-driven-security-pipeline)
+- [Kubernetes-Native Tekton Security Pipeline](#kubernetes-native-tekton-security-pipeline)
 
 ## Python Jenkins Declarative Pipeline
 DevSecOps pipeline for Python based project using Jenkins, Ansible, AWS, and open-source security tools and checks.
@@ -75,7 +75,7 @@ DevSecOps pipeline for React+Docker based project using Azure DevOps - Release P
 ![azure_devops2](https://user-images.githubusercontent.com/11514346/73614730-9fe54f00-45f9-11ea-9428-9872ed98baf1.png)
 
 
-## REST-API GCP GoCD Pipeline
+## REST API GCP GoCD Pipeline
 
 DevSecOps pipeline for Python flask REST API project using Go CD, Terraform, GCP, and open-source and cloud native security tools and checks. 
 
