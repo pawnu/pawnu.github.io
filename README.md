@@ -1,6 +1,14 @@
-# DevSecOps Pipelines
+# DevSecOps
 
-Following are some pipelines I have created to better understand DevSecOps.
+DevSecOps can be broken down into three domains - **People**, **Process**, and **Technology**. 
+
+**People** and **Processes** create the `security culture` of a delivery team. This may involve providing the team with training, education, and awareness to identify vulnerabilities & threats to the product and service being delivered, and to enable the team to be able to remediate against them in the Software Development Lifecycle. The most important question to ask is whether the security culture programme is designed to be fun, and hence sustainable in the long run.
+
+**Process** and **Technology** is about embedding security into the Software Development Lifecycle by not only introducing the right set of security tools to mitigate against threats and vulnerabilities posing a risk to the organisation, but also embedding otuput of security tools into existing processes such as Application Lifecycle Management (e.g. creating JIRA security issues, bugs, epics), Alerting (e.g. vulnerability alerts, SLA breaches in Slack), Planning & Design (e.g. threat modelling Epics and Features). 
+
+### DevSecOps Pipelines
+
+Following are some toolchain I have created to enable DevSecOps in Cloud, Container, and other delivery model.
 
 - [Python Jenkins Declarative Pipeline](#python-jenkins-declarative-pipeline)
 - [JAVA AWS Cloud-Native Pipeline](#java-aws-cloud-native-pipeline)
