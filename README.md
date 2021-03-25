@@ -1,12 +1,12 @@
 # What is DevSecOps?
 
-DevSecOps is the security program in a DevOps world which allows security risk to be managed within product planning, development, delivery, and at runtime at the speed of DevOps. This means automating security as much as possible, and the delivery team adopting secure design principals such as threat-modelling, secure-by-design, shift-left, zero-trust-networks, defense-in-depth, least-privileged, etc.
+DevSecOps is your security program in the DevOps world which allows security risk to be managed at the speed of DevOps. This means automating security as much as possible, and the delivery team adopting secure design principals such as threat-modelling, secure-by-design, shift-left, zero-trust-networks, defense-in-depth, least-privileged, etc.
 
-**Why adopt DevSecOps?**
+### Why adopt DevSecOps?
 
 Consider the following Product Development and Vulnerability Management Options
 
-Option 1
+**Option 1:**
 1. `Product Plan`
 2. `Architect`
 3. `Design`
@@ -25,7 +25,7 @@ Option 1
 16. `Re-deploy`
 17. `Monitor including monitoring/preventing the exploitation of vulnerability`
 
-Option 2
+**Option 2:**
 1. `Product Plan`
 2. `Architect`
 3. `Threat Model identifies vulnerability`
@@ -35,7 +35,9 @@ Option 2
 7. `Deploy`
 8. `Monitor including monitoring/preventing the exploitation of vulnerability`
 
-Option 1 is where delivery team treat security as an afterthought or a band-aid solution to apply after an incident happens whereas Option 2 is where a DevSecOps model has been adopted. That is not to say that DevSecOps will guarantee that you will never be following Option 1 as there may be 'zero-day attacks' and the unexpected. The idea is that with DevSecOps, the overall cost to the organisation will decrease significantly with majority of vulnerabilties being identified through Option 2 rather than Option 1. Reducing Option 1 also means reducing the risk of data theft/loss, reputational damages, fines from regulatory bodies, etc. 
+Option 1 is where delivery team treat security as an afterthought or a band-aid solution to apply after an incident happens whereas Option 2 is where a DevSecOps model has been adopted. That is not to say that DevSecOps will guarantee that you will never be following Option 1 as there may be 'zero-day attacks' and the unexpected. 
+
+The idea is that with DevSecOps, the overall cost to the organisation will decrease significantly with majority of vulnerabilties being identified through Option 2 rather than Option 1. Reducing Option 1 also means reducing the risk of data theft/loss, reputational damages, fines from regulatory bodies, etc. 
 
 Also to consider in Option 1 is the implication that re-work may be carried out by a completely different team years down the line without as good an understanding of the original code base, as opposed to the same team in Option 2 who may find it easier to fix their own code.
 
