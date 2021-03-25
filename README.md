@@ -1,17 +1,43 @@
 # What is DevSecOps?
 
-DevSecOps is the security programme in a DevOps world which allows security risk to be managed within product planning, development, delivery, and runtime at the speed of DevOps. This means automating security as much as possible, and the delivery team adopting secure design principals such as threat-modelling, secure-by-design, shift-left, zero-trust-networks, defense-in-depth, least-privileged, etc.
+DevSecOps is the security program in a DevOps world which allows security risk to be managed within product planning, development, delivery, and at runtime at the speed of DevOps. This means automating security as much as possible, and the delivery team adopting secure design principals such as threat-modelling, secure-by-design, shift-left, zero-trust-networks, defense-in-depth, least-privileged, etc.
 
 **Why adopt DevSecOps?**
 
-Consider the following incident management Options
+Consider the following Product Development and Vulnerability Management Options
 
-1. `Product Plan` -> `Architect` -> `Design` -> `Code` -> `Test` -> `Deploy` -> `Monitor` -> `Security Incident Alert` -> `Root Cause Analysis` -> `Vulnerability identification` -> `Re-Plan` -> `Re-Architect` -> `Re-design including remediation/mitigation of vulnerability` -> `Re-code` -> `Re-test including test to uncover vulnerability` -> `Re-deploy` -> `Monitor including monitoring/preventing the exploitation of vulnerability`
-2. `Product Plan` -> `Architect` -> `Threat Model identifies vulnerability` -> `Design including remediation/mitigation of vulnerability` -> `Code` -> `Test including test to uncover vulnerability` -> `Deploy` -> `Monitor including monitoring/preventing the exploitation of vulnerability`
+Option 1
+1. `Product Plan`
+2. `Architect`
+3. `Design`
+4. `Code`
+5. `Test`
+6. `Deploy`
+7. `Monitor`
+8. `Security Incident Alert`
+9. `Root Cause Analysis`
+10. `Vulnerability identification`
+11. `Re-Plan`
+12. `Re-Architect`
+13. `Re-design including remediation/mitigation of vulnerability`
+14. `Re-code with fixes`
+15. `Re-test including test to uncover vulnerability`
+16. `Re-deploy`
+17. `Monitor including monitoring/preventing the exploitation of vulnerability`
 
-Option 1 is where delivery team treat security as an afterthought or a band-aid solution to apply after an incident happens whereas Option 2 is where a DevSecOps model is adopted. The overall cost to the organisation will be significantly more in Option 1 than Option 2 not just incident/vulnerability management perspective, but also from the impact of waiting for incidents to occur which may result in data theft/loss, reputational damages, fines from regulatory bodies, etc. 
+Option 2
+1. `Product Plan`
+2. `Architect`
+3. `Threat Model identifies vulnerability`
+4. `Design including remediation/mitigation of vulnerability`
+5. `Code`
+6. `Test including test to uncover vulnerability`
+7. `Deploy`
+8. `Monitor including monitoring/preventing the exploitation of vulnerability`
 
-Also to consider in Option 1 is the implication that re-work may be carried out by a completely different team years down the line without as good an understanding of the original code base, as opposed to the same team in Option 2 who may find it easy to fix their own code.
+Option 1 is where delivery team treat security as an afterthought or a band-aid solution to apply after an incident happens whereas Option 2 is where a DevSecOps model has been adopted. That is not to say that DevSecOps will guarantee that you will never be following Option 1 as there may be 'zero-day attacks' and the unexpected. The idea is that with DevSecOps, the overall cost to the organisation will decrease significantly with majority of vulnerabilties being identified through Option 2 rather than Option 1. Reducing Option 1 also means reducing the risk of data theft/loss, reputational damages, fines from regulatory bodies, etc. 
+
+Also to consider in Option 1 is the implication that re-work may be carried out by a completely different team years down the line without as good an understanding of the original code base, as opposed to the same team in Option 2 who may find it easier to fix their own code.
 
 ## How to create a DevSecOps practice?
 
