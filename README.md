@@ -1,12 +1,12 @@
 # What is DevSecOps?
 
-DevSecOps is your security program in the DevOps world which allows security risk to be managed at the speed of DevOps. This means automating security as much as possible, and the delivery team adopting secure design principals such as threat-modelling, secure-by-design, shift-left, zero-trust-networks, defense-in-depth, least-privileged, etc.
+DevSecOps is your security program in DevOps world which allows security risks to be managed at the speed of DevOps. This means automating security as much as possible, and the delivery team adopting secure design principals such as threat-modelling, secure-by-design, shift-left, zero-trust-network, defense-in-depth, least-privileged, etc.
 
-### Why adopt DevSecOps?
+**Why adopt DevSecOps?**
 
-Consider the following Product Development and Vulnerability Management Options
+Consider the following Product Development and Vulnerability Management Lifecycle.
 
-**Option 1:**
+*Option 1:*
 1. `Product Plan`
 2. `Architect`
 3. `Design`
@@ -25,7 +25,7 @@ Consider the following Product Development and Vulnerability Management Options
 16. `Re-deploy`
 17. `Monitor including monitoring/preventing the exploitation of vulnerability`
 
-**Option 2:**
+*Option 2:*
 1. `Product Plan`
 2. `Architect`
 3. `Threat Model identifies vulnerability`
@@ -35,7 +35,7 @@ Consider the following Product Development and Vulnerability Management Options
 7. `Deploy`
 8. `Monitor including monitoring/preventing the exploitation of vulnerability`
 
-Option 1 is where delivery team treat security as an afterthought or a band-aid solution to apply after an incident happens whereas Option 2 is where a DevSecOps model has been adopted. That is not to say that DevSecOps will guarantee that you will never be following Option 1 as there may be 'zero-day attacks' and the unexpected. 
+Option 1 is where delivery team treat security as an afterthought or a band-aid solution to apply after an incident happens whereas Option 2 is where a DevSecOps model has been adopted. That is not to say that DevSecOps will guarantee that you will never be following Option 1 as there may be "zero-day attacks" and the unexpected. 
 
 The idea is that with DevSecOps, the overall cost to the organisation will decrease significantly with majority of vulnerabilties being identified through Option 2 rather than Option 1. Reducing Option 1 also means reducing the risk of data theft/loss, reputational damages, fines from regulatory bodies, etc. 
 
@@ -49,7 +49,7 @@ DevSecOps can be broken down into three domains - **People**, **Process**, and *
 
 **Process** and **Technology** is about embedding security into the Software Development Lifecycle by not only introducing the right set of security tools to help remediate/mitigate against threats and vulnerabilities posing a risk to the organisation, but also embedding otuput of security tools into existing DevOps processes such as Application Lifecycle Management (e.g. creating security issues, bugs, epics), Alerting (e.g. vulnerability alerts, SLA breaches in Chat System), Planning & Design (e.g. threat modelling Epics and Features), Incident Management (e.g. converting SIEM offenses to IT Service Management tickets). 
 
-### DevSecOps Pipelines
+**DevSecOps Pipelines**
 
 Following are some toolchain I have created to show how DevSecOps could be introduced in Cloud, Container, and other delivery model.
 
