@@ -1,14 +1,29 @@
-# DevSecOps
+# What is DevSecOps?
+
+DevSecOps is the security programme in a DevOps world which allows security risk to be managed within product planning, development, delivery, and runtime at the speed of DevOps. This means automating security as much as possible, and the delivery team adopting secure design principals such as threat-modelling, secure-by-design, shift-left, zero-trust-networks, defense-in-depth, least-privileged, etc.
+
+**Why adopt DevSecOps?**
+
+Consider the following incident management Options
+
+1. `Product Plan` -> `Architect` -> `Design` -> `Code` -> `Test` -> `Deploy` -> `Monitor` -> `Security Incident Alert` -> `Root Cause Analysis` -> `Vulnerability identification` -> `Re-Plan` -> `Re-Architect` -> `Re-design including remediation/mitigation of vulnerability` -> `Re-code` -> `Re-test including test to uncover vulnerability` -> `Re-deploy` -> `Monitor including monitoring/preventing the exploitation of vulnerability`
+2. `Product Plan` -> `Architect` -> `Threat Model identifies vulnerability` -> `Design including remediation/mitigation of vulnerability` -> `Code` -> `Test including test to uncover vulnerability` -> `Deploy` -> `Monitor including monitoring/preventing the exploitation of vulnerability`
+
+Option 1 is where delivery team treat security as an afterthought or a band-aid solution to apply after an incident happens whereas Option 2 is where a DevSecOps model is adopted. The overall cost to the organisation will be significantly more in Option 1 than Option 2 not just incident/vulnerability management perspective, but also from the impact of waiting for incidents to occur which may result in data theft/loss, reputational damages, fines from regulatory bodies, etc. 
+
+Also to consider in Option 1 is the implication that re-work may be carried out by a completely different team years down the line without as good an understanding of the original code base, as opposed to the same team in Option 2 who may find it easy to fix their own code.
+
+## How to create a DevSecOps practice?
 
 DevSecOps can be broken down into three domains - **People**, **Process**, and **Technology**. 
 
-**People** and **Processes** create the `security culture` of a delivery team. This may involve providing the team with training, education, and awareness to identify vulnerabilities & threats to the product and service being delivered, and to enable the team to be able to remediate against them in the Software Development Lifecycle. The most important question to ask is whether the security culture programme is designed to be fun, and hence sustainable in the long run.
+**People** and **Processes** create the `security culture` of a delivery team. This may involve providing the delivery team with training, education, and awareness to identify vulnerabilities & threats to the product and service being delivered, and to enable the team to remediate against them in the Software Development Lifecycle. The most important question to consider is whether the security culture programme provides any incentive and if it is designed to be fun and hence sustainable in the long run.
 
-**Process** and **Technology** is about embedding security into the Software Development Lifecycle by not only introducing the right set of security tools to mitigate against threats and vulnerabilities posing a risk to the organisation, but also embedding otuput of security tools into existing processes such as Application Lifecycle Management (e.g. creating JIRA security issues, bugs, epics), Alerting (e.g. vulnerability alerts, SLA breaches in Slack), Planning & Design (e.g. threat modelling Epics and Features). 
+**Process** and **Technology** is about embedding security into the Software Development Lifecycle by not only introducing the right set of security tools to help remediate/mitigate against threats and vulnerabilities posing a risk to the organisation, but also embedding otuput of security tools into existing DevOps processes such as Application Lifecycle Management (e.g. creating security issues, bugs, epics), Alerting (e.g. vulnerability alerts, SLA breaches in Chat System), Planning & Design (e.g. threat modelling Epics and Features), Incident Management (e.g. converting SIEM offenses to IT Service Management tickets). 
 
 ### DevSecOps Pipelines
 
-Following are some toolchain I have created to enable DevSecOps in Cloud, Container, and other delivery model.
+Following are some toolchain I have created to show how DevSecOps could be introduced in Cloud, Container, and other delivery model.
 
 - [Python Jenkins Declarative Pipeline](#python-jenkins-declarative-pipeline)
 - [JAVA AWS Cloud-Native Pipeline](#java-aws-cloud-native-pipeline)
