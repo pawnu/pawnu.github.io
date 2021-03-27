@@ -1,6 +1,6 @@
 # What is DevSecOps?
 
-DevSecOps is your security program in DevOps world which allows security risks to be managed at the speed of DevOps. This means automating security as much as possible, and the delivery team adopting secure design principals such as threat-modelling, secure-by-design, shift-left, zero-trust-network, defense-in-depth, least-privileged, etc.
+DevSecOps is your security program in DevOps world which allows security risks to be managed at the speed of DevOps. This means automating security as much as possible, and the delivery team adopting secure design principals such as threat-modelling, secure-by-design, shift-left, zero-trust-network, defense-in-depth, least-privileged access, etc within the Software Development Lifecycle (SDLC).
 
 **Why adopt DevSecOps?**
 
@@ -15,15 +15,16 @@ Consider the following Product Development and Vulnerability Management Lifecycl
 6. `Deploy`
 7. `Monitor`
 8. `Security Incident Alert`
-9. `Root Cause Analysis`
-10. `Vulnerability identification`
-11. `Re-Plan`
-12. `Re-Architect`
-13. `Re-design including remediation/mitigation of vulnerability`
-14. `Re-code with fixes`
-15. `Re-test including test to uncover vulnerability`
-16. `Re-deploy`
-17. `Monitor including monitoring/preventing the exploitation of vulnerability`
+9. `Incident Response` i.e. `Damage Control`
+10. `Root Cause Analysis`
+11. `Vulnerability identification`
+12. `Re-Plan`
+13. `Re-Architect`
+14. `Re-design including remediation/mitigation of vulnerability`
+15. `Re-code with fixes`
+16. `Re-test including test to uncover vulnerability`
+17. `Re-deploy`
+18. `Monitor including monitoring/preventing the exploitation of vulnerability`
 
 *Option 2:*
 1. `Product Plan`
@@ -37,7 +38,7 @@ Consider the following Product Development and Vulnerability Management Lifecycl
 
 Option 1 is where delivery team treat security as an afterthought or a band-aid solution to apply after an incident happens whereas Option 2 is where a DevSecOps model has been adopted. That is not to say that DevSecOps will guarantee that you will never be following Option 1 as there may be "zero-day attacks" and the unexpected. 
 
-The idea is that with DevSecOps, the overall cost to the organisation will decrease significantly with majority of vulnerabilties being identified through Option 2 rather than Option 1. Reducing Option 1 also means reducing the risk of data theft/loss, reputational damages, fines from regulatory bodies, etc. 
+The idea is that with DevSecOps, the overall cost to the organisation will decrease significantly with majority of vulnerabilties being identified through Option 2 rather than Option 1. Reducing Option 1 also means reducing incidents which may lead to risk of data theft/loss, introduction of malwares & ransomwares, reputational damages, fines from regulatory bodies, etc. 
 
 Also to consider in Option 1 is the implication that re-work may be carried out by a completely different team years down the line without as good an understanding of the original code base, as opposed to the same team in Option 2 who may find it easier to fix their own code.
 
