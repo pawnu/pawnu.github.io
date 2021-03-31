@@ -6,7 +6,7 @@ DevSecOps is your security program in DevOps world which allows security risks t
 
 Consider the following Product Development and Vulnerability Management Lifecycle.
 
-*Option 1:*
+*Lifecycle 1:*
 1. `Product Plan`
 2. `Architect`
 3. `Design`
@@ -26,7 +26,7 @@ Consider the following Product Development and Vulnerability Management Lifecycl
 17. `Re-deploy`
 18. `Monitor including monitoring/preventing the exploitation of vulnerability`
 
-*Option 2:*
+*Lifecycle 2:*
 1. `Product Plan`
 2. `Architect`
 3. `Threat Model identifies vulnerability`
@@ -36,11 +36,9 @@ Consider the following Product Development and Vulnerability Management Lifecycl
 7. `Deploy`
 8. `Monitor including monitoring/preventing the exploitation of vulnerability`
 
-Option 1 is where delivery team treat security as an afterthought or a band-aid solution to apply after an incident happens whereas Option 2 is where a DevSecOps model has been adopted. That is not to say that DevSecOps will guarantee that you will never be following Option 1 as there may be "zero-day attacks" and the unexpected. 
+Lifecycle 1 is where delivery team treat security as an afterthought or a band-aid solution to apply after an incident occurs whereas Lifecycle 2 is where a DevSecOps model has been adopted. From project management perspective, Lifecycle 1 without security activities may look to be cost effective initially however it often leads to rework which requires either patches or new projects. It makes sense from a product ownership perspective to use DevSecOps, as practictioners report that Return on Investment with DevSecOps as opposed to "incident-led" approach can range from 5-100x in the long run.
 
-The idea is that with DevSecOps, the overall cost to the organisation will decrease significantly with majority of vulnerabilties being identified through Option 2 rather than Option 1. Reducing Option 1 also means reducing incidents which may lead to risk of data theft/loss, introduction of malwares & ransomwares, reputational damages, fines from regulatory bodies, etc. 
-
-Also to consider in Option 1 is the implication that re-work may be carried out by a completely different team years down the line without as good an understanding of the original code base, as opposed to the same team in Option 2 who may find it easier to fix their own code.
+That is not to say that DevSecOps will guarantee that you will never be following Lifecycle 1 as there may be "zero-day attacks" and the unexpected. The idea is that with DevSecOps, the overall cost to the organisation will decrease significantly with majority of vulnerabilties being identified through Lifecycle 2 rather than Lifecycle 1. Reducing Lifecycle 1 also means reducing incidents which may lead to risk of data theft/loss, introduction of malwares & ransomwares, reputational damages, fines from regulatory bodies, etc. Also to consider in Lifecycle 1 is the implication that re-work may be carried out by a completely different team years down the line without as good an understanding of the original code base, as opposed to the same team in Lifecycle 2 who may find it easier to fix their own code.
 
 ## How to create a DevSecOps practice?
 
