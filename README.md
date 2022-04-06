@@ -1,5 +1,3 @@
-**DevSecOps Pipelines**
-
 Following are some toolchains I have played around with to get a feel of how DevSecOps could be implemented in Cloud, Kubernetes, AppSec, and other delivery model.
 
 - [Kubernetes-Native Tekton Security Pipeline](#kubernetes-native-tekton-security-pipeline)
