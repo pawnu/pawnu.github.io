@@ -1,66 +1,77 @@
-# What is DevSecOps?
-
-DevSecOps is your security program in DevOps world which allows security risks to be managed at the speed of DevOps. This means automating security as much as possible, and the delivery team adopting secure design principals such as threat-modelling, secure-by-design, shift-left, zero-trust-network, defense-in-depth, least-privileged access, etc within the Software Development Lifecycle (SDLC).
-
-**Why adopt DevSecOps?**
-
-Consider the following Product Development and Vulnerability Management Lifecycle.
-
-*Lifecycle 1:*
-1. `Product Plan`
-2. `Architect`
-3. `Design`
-4. `Code`
-5. `Test`
-6. `Deploy`
-7. `Monitor`
-8. `Security Incident Alert`
-9. `Incident Response` i.e. `Damage Control`
-10. `Root Cause Analysis`
-11. `Vulnerability identification`
-12. `Re-Plan`
-13. `Re-Architect`
-14. `Re-design including remediation/mitigation of vulnerability`
-15. `Re-code with fixes`
-16. `Re-test including test to uncover vulnerability`
-17. `Re-deploy`
-18. `Monitor including monitoring/preventing the exploitation of vulnerability`
-
-*Lifecycle 2:*
-1. `Product Plan`
-2. `Architect`
-3. `Threat Model identifies vulnerability`
-4. `Design including remediation/mitigation of vulnerability`
-5. `Code`
-6. `Test including test to uncover vulnerability`
-7. `Deploy`
-8. `Monitor including monitoring/preventing the exploitation of vulnerability`
-
-Lifecycle 1 is where delivery team treat security as an afterthought or a band-aid solution to apply after an incident occurs whereas Lifecycle 2 is where a DevSecOps model has been adopted. From project management perspective, Lifecycle 1 without security activities may look to be cost effective initially however it often leads to rework which requires either patches or new projects. It makes sense from a product ownership perspective to use DevSecOps, as practictioners report that Return on Investment with DevSecOps as opposed to "incident-led" approach can range from 5-100x in the long run.
-
-That is not to say that DevSecOps will guarantee that you will never be following Lifecycle 1 as there may be "zero-day attacks" and the unexpected. The idea is that with DevSecOps, the overall cost to the organisation will decrease significantly with majority of vulnerabilties being identified through Lifecycle 2 rather than Lifecycle 1. Reducing Lifecycle 1 also means reducing incidents which may lead to risk of data theft/loss, introduction of malwares & ransomwares, reputational damages, fines from regulatory bodies, etc. Also to consider in Lifecycle 1 is the implication that re-work may be carried out by a completely different team years down the line without as good an understanding of the original code base, as opposed to the same team in Lifecycle 2 who may find it easier to fix their own code.
-
-## How to create a DevSecOps practice?
-
-DevSecOps can be broken down into three domains - **People**, **Process**, and **Technology**. 
-
-**People** and **Processes** create the `security culture` of a delivery team. This may involve providing the delivery team with training, education, and awareness to identify vulnerabilities & threats to the product and service being delivered, and to enable the team to remediate against them in the Software Development Lifecycle. The most important question to consider is whether the security culture programme provides any incentive and if it is designed to be fun and hence sustainable in the long run.
-
-**Process** and **Technology** is about embedding security into the Software Development Lifecycle by not only introducing the right set of security tools to help remediate/mitigate against threats and vulnerabilities posing a risk to the organisation, but also embedding otuput of security tools into existing DevOps processes such as Application Lifecycle Management (e.g. creating security issues, bugs, epics), Alerting (e.g. vulnerability alerts, SLA breaches in Chat System), Planning & Design (e.g. threat modelling Epics and Features), Incident Management (e.g. converting SIEM offenses to IT Service Management tickets). 
-
 **DevSecOps Pipelines**
 
-Following are some toolchain I have created to show how DevSecOps could be introduced in Cloud, Container, and other delivery model.
+Following are some toolchains I have played around with to get a feel of how DevSecOps could be implemented in Cloud, Kubernetes, AppSec, and other delivery model.
 
+- [Kubernetes-Native Tekton Security Pipeline](#kubernetes-native-tekton-security-pipeline)
+- [Vulnerability Management Driven Pipeline](#vulnerability-management-driven-security-pipeline)
+- [Container/Kubernetes Security Pipeline](#containerkubernetes-security-pipeline)
 - [Python Jenkins Declarative Pipeline](#python-jenkins-declarative-pipeline)
 - [JAVA AWS Cloud-Native Pipeline](#java-aws-cloud-native-pipeline)
 - [JavaScript Azure-DevOps Pipeline](#javascript-azure-devops-pipeline)
 - [REST API GCP GoCD Pipeline](#rest-api-gcp-gocd-pipeline)
 - [Android/iOS App Security Pipeline](#androidios-app-security-pipeline)
-- [Container/Kubernetes Security Pipeline](#containerkubernetes-security-pipeline)
 - [Attack Tree SlackBot](#attack-tree-slackbot)
-- [Vulnerability Management Driven Pipeline](#vulnerability-management-driven-security-pipeline)
-- [Kubernetes-Native Tekton Security Pipeline](#kubernetes-native-tekton-security-pipeline)
+
+## Kubernetes-Native Tekton Security Pipeline
+
+A DevSecOps pipeline living within Kubernetes Cluster as Tekton CI/CD, checking for Application Security, Container Security, Infrastructure as Code security, using opensource and free tools.
+
+- CICD - `Tekton`
+- Git Secret Check - `trufflehog`
+- SCA - `safety`
+- SAST - `bandit`
+- DAST - `OWASP Zed Attack Proxy`
+- IaC Scanner - `checkov`
+- Container Vulnerability Analysis - `starboard trivy`
+- Container Image storage - `Docker Hub`
+- Database Dynamic Secrets - `Hashicorp Vault Database Engine`, `PostgreSQL`
+- Pod Secret Injection - `Hashicorp Vault annotation + agent`
+- Kubernetes resource deployment - `kubectl`, `helm`
+- Kubernetes CIS benchmark - `starboard kube-bench`
+- Kubernetes workload audit - `starboard polaris`
+- Kubernetes penetration test - `starboard kube-hunter`
+- Kubernetes Engine - `Minikube`
+- Kubernetes nodes - `virtualbox driver`
+
+![tektonpipeline](https://user-images.githubusercontent.com/11514346/111226740-7444de80-85d9-11eb-91b8-e6e308799919.PNG)
+
+## Vulnerability Management Driven Security Pipeline
+A vulnerability manager (DefectDojo) based pipeline for Python based project which comes with ASVS Standard to provide security test plan and requirements, integration of vulnerability data from 70+ tools, and slack integration for monitoring. 
+
+**Toolchain**
+
+- Planning - `OWASP ASVS`
+- CI/CD - `Go CD` 
+- secret-check - `trufflehog`
+- SCA - `safety`
+- SAST - `bandit`
+- DAST - `nikto`
+- Container Vulnerability Analysis - `trivy`
+- Vulnerability Manager - `DefectDojo`
+- Monitoring - `Slack`
+- Environment - `AWS`
+
+![gocd_pipeline](https://user-images.githubusercontent.com/11514346/84599383-8be41080-ae69-11ea-952c-51f2ad97f4eb.PNG)
+
+## Container/Kubernetes Security Pipeline
+DevSecOps pipeline for container based application deployed to GCP kubernetes cluster using GCP k8s and container solutions, and security tests with open source container solutions.
+
+- CICD - `Jenkins`
+- Git Secret Check - `trufflehog`
+- Container image vulnerability analysis - `trivy`
+- Container Image malware analysis - `clamav`
+- Container Image storage - `Google Container Registry`
+- Kubernetes Engine - `Google Kubernetes Engine`
+- Kubernetes nodes - `Google Container-Optimized OS`
+- Kubernetes setup - `gcloud`
+- Kubernetes resource deployment - `kubectl`, `helm`
+- Kubernetes CIS benchmark - `kube-bench`
+- Kubernetes penetration test - `kube-hunter`
+- Kubernetes runtime protection - `falco`
+- Environment - `GCP`
+
+![image](https://user-images.githubusercontent.com/11514346/80305685-35861a00-87b6-11ea-9a38-9930e7e8af6b.png)
+
 
 ## Python Jenkins Declarative Pipeline
 DevSecOps pipeline for Python based project using Jenkins, Ansible, AWS, and open-source security tools and checks.
@@ -170,26 +181,6 @@ For Android, MobSF also checks certificate strength, obfuscation techniques, ant
 ![iOSPipeline](https://user-images.githubusercontent.com/11514346/78502793-bd9a7600-775a-11ea-8f22-a5dc49cc3077.PNG)
 
 
-## Container/Kubernetes Security Pipeline
-DevSecOps pipeline for container based application deployed to GCP kubernetes cluster using GCP k8s and container solutions, and security tests with open source container solutions.
-
-- CICD - `Jenkins`
-- Git Secret Check - `trufflehog`
-- Container image vulnerability analysis - `trivy`
-- Container Image malware analysis - `clamav`
-- Container Image storage - `Google Container Registry`
-- Kubernetes Engine - `Google Kubernetes Engine`
-- Kubernetes nodes - `Google Container-Optimized OS`
-- Kubernetes setup - `gcloud`
-- Kubernetes resource deployment - `kubectl`, `helm`
-- Kubernetes CIS benchmark - `kube-bench`
-- Kubernetes penetration test - `kube-hunter`
-- Kubernetes runtime protection - `falco`
-- Environment - `GCP`
-
-![image](https://user-images.githubusercontent.com/11514346/80305685-35861a00-87b6-11ea-9a38-9930e7e8af6b.png)
-
-
 ## Attack Tree SlackBot
 A simple bot that sits on AWS EC2 instance with Python Flask API, will create attack-tree-diagram using graphviz library when numbered list of attack is provided as input.
 
@@ -205,43 +196,5 @@ A simple bot that sits on AWS EC2 instance with Python Flask API, will create at
 
 ![slackbot](https://user-images.githubusercontent.com/11514346/73794522-8df1e080-47a0-11ea-8a62-6b646f72e334.PNG)
 
-## Vulnerability Management Driven Security Pipeline
-A vulnerability manager (DefectDojo) based pipeline for Python based project which comes with ASVS Standard to provide security test plan and requirements, integration of vulnerability data from 70+ tools, and slack integration for monitoring. 
 
-**Toolchain**
 
-- Planning - `OWASP ASVS`
-- CI/CD - `Go CD` 
-- secret-check - `trufflehog`
-- SCA - `safety`
-- SAST - `bandit`
-- DAST - `nikto`
-- Container Vulnerability Analysis - `trivy`
-- Vulnerability Manager - `DefectDojo`
-- Monitoring - `Slack`
-- Environment - `AWS`
-
-![gocd_pipeline](https://user-images.githubusercontent.com/11514346/84599383-8be41080-ae69-11ea-952c-51f2ad97f4eb.PNG)
-
-## Kubernetes-Native Tekton Security Pipeline
-
-A DevSecOps pipeline living within Kubernetes Cluster as Tekton CI/CD, checking for Application Security, Container Security, Infrastructure as Code security, using opensource and free tools.
-
-- CICD - `Tekton`
-- Git Secret Check - `trufflehog`
-- SCA - `safety`
-- SAST - `bandit`
-- DAST - `OWASP Zed Attack Proxy`
-- IaC Scanner - `checkov`
-- Container Vulnerability Analysis - `starboard trivy`
-- Container Image storage - `Docker Hub`
-- Database Dynamic Secrets - `Hashicorp Vault Database Engine`, `PostgreSQL`
-- Pod Secret Injection - `Hashicorp Vault annotation + agent`
-- Kubernetes resource deployment - `kubectl`, `helm`
-- Kubernetes CIS benchmark - `starboard kube-bench`
-- Kubernetes workload audit - `starboard polaris`
-- Kubernetes penetration test - `starboard kube-hunter`
-- Kubernetes Engine - `Minikube`
-- Kubernetes nodes - `virtualbox driver`
-
-![tektonpipeline](https://user-images.githubusercontent.com/11514346/111226740-7444de80-85d9-11eb-91b8-e6e308799919.PNG)
